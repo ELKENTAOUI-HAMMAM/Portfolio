@@ -1,18 +1,9 @@
 import './Interests.css';
+import { useTranslation } from '../contexts/LanguageContext';
 
 export default function Interests() {
-    const interests = [
-        {
-            icon: '🥋',
-            title: 'Arts Martiaux',
-            items: [
-                'Ceinture noire 2ème DAN',
-                'Karate / Karate Contact / Ju-Jitsu',
-                'Champion du Maroc',
-                'Président du club Sport Agdal'
-            ]
-        }
-    ];
+    const { t } = useTranslation();
+    const interests = t('interests.list');
 
     return (
         <section id="interests">

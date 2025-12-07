@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
+import { useTranslation } from '../contexts/LanguageContext';
 import './Skills.css';
 
 export default function Skills() {
+    const { t } = useTranslation();
     const skillsRef = useRef(null);
 
     useEffect(() => {
@@ -26,48 +28,7 @@ export default function Skills() {
         return () => observer.disconnect();
     }, []);
 
-    const skillCategories = [
-        {
-            title: 'Langages de Programmation',
-            skills: [
-                { name: 'Java', level: 90 },
-                { name: 'JavaScript / TypeScript', level: 85 },
-                { name: 'Python', level: 80 },
-                { name: 'PHP', level: 75 },
-                { name: 'C#', level: 70 },
-                { name: 'Dart', level: 65 },
-                { name: 'Kotlin', level: 65 }
-            ]
-        },
-        {
-            title: 'Frameworks & Technologies',
-            skills: [
-                { name: 'Spring Boot', level: 90 },
-                { name: 'Angular', level: 85 },
-                { name: 'React.js', level: 85 },
-                { name: 'ASP.NET', level: 75 },
-                { name: 'Flutter', level: 70 },
-                { name: 'TensorFlow / Keras', level: 75 }
-            ]
-        },
-        {
-            title: 'Bases de Données',
-            skills: [
-                { name: 'MySQL', level: 85 },
-                { name: 'PostgreSQL', level: 85 },
-                { name: 'Oracle Database', level: 75 },
-                { name: 'SQLite', level: 80 }
-            ]
-        },
-        {
-            title: 'Compétences Techniques',
-            tags: ['Machine Learning', 'Deep Learning', 'REST API', 'Microservices', 'Docker', 'Git', 'DevOps', 'Keycloak', 'UML', 'Méthode Agile']
-        },
-        {
-            title: 'Compétences Transversales',
-            tags: ['Communication', 'Adaptabilité', 'Travail d\'équipe', 'Gestion de projet', 'Résolution de problèmes']
-        }
-    ];
+    const skillCategories = t('skills.list');
 
     return (
         <section id="skills" ref={skillsRef}>

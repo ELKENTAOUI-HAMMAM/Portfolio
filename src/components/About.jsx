@@ -36,13 +36,13 @@ export default function About() {
                             <div className="info-item">
                                 <span>📍</span>
                                 <div>
-                                    <strong>{t('about.location')}:</strong> Marrakech, Maroc
+                                    <strong>{t('about.location')}:</strong> {t('about.locationValue')}
                                 </div>
                             </div>
                             <div className="info-item">
                                 <span>🌐</span>
                                 <div>
-                                    <strong>{t('about.languages')}:</strong> Arabe, Français, Anglais
+                                    <strong>{t('about.languages')}:</strong> {t('about.languagesValue')}
                                 </div>
                             </div>
                         </div>
