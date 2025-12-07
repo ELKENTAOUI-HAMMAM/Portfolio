@@ -1,0 +1,95 @@
+.cert-filters {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.cert-filters button {
+    padding: 0.7rem 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-weight: 500;
+}
+
+.cert-filters button:hover {
+    border-color: var(--text-accent);
+    color: var(--text-primary);
+}
+
+.cert-filters button.active {
+    background: var(--primary-gradient);
+    color: white;
+    border-color: transparent;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-sm);
+}
+
+.cert-card {
+    background: var(--bg-secondary);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cert-card:hover {
+    border-color: var(--text-accent);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+}
+
+.cert-platform {
+    font-size: 0.85rem;
+    color: var(--text-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cert-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.cert-issuer {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.cert-score {
+    font-size: 0.85rem;
+    color: var(--text-accent);
+    font-weight: 600;
+}
+
+.cert-verify {
+    font-size: 0.85rem;
+    color: var(--text-accent);
+    font-weight: 500;
+    margin-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    opacity: 0.8;
+    transition: opacity var(--transition-fast);
+}
+
+.cert-card:hover .cert-verify {
+    opacity: 1;
+}
