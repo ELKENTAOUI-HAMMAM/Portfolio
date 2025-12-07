@@ -70,7 +70,7 @@ export default function Contact() {
 
                     <div className="social-links">
                         <a
-                            href="https://www.linkedin.com/in/hammam-elkentaoui"
+                            href="https://www.linkedin.com/in/hammam-elkentaoui-851a7b2b5/"
                             className="social-link"
                             target="_blank"
                             rel="noopener noreferrer"
