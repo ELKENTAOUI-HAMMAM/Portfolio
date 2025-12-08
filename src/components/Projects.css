@@ -28,6 +28,12 @@
     font-size: 5rem;
 }
 
+.project-logo {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
 .project-content {
     padding: var(--spacing-md);
 }

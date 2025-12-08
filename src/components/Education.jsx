@@ -8,7 +8,7 @@ export default function Education() {
     return (
         <section id="education">
             <div className="container">
-                <h2 className="section-title">Formation Académique</h2>
+                <h2 className="section-title">{t('education.title')}</h2>
                 <div className="timeline">
                     {education.map((edu, index) => (
                         <div key={index} className="timeline-item">

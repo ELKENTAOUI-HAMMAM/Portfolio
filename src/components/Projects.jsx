@@ -1,5 +1,6 @@
 import './Projects.css';
 import { useTranslation } from '../contexts/LanguageContext';
+import recyclitixLogo from '../assets/Recyclitix.png';
 
 export default function Projects() {
     const { t } = useTranslation();
@@ -8,12 +9,16 @@ export default function Projects() {
     return (
         <section id="projects">
             <div className="container">
-                <h2 className="section-title">Projets Académiques</h2>
+                <h2 className="section-title">{t('projects.title')}</h2>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
                         <div key={index} className="project-card">
                             <div className="project-image">
-                                <span>{project.icon}</span>
+                                {project.title === 'Recyclitix' ? (
+                                    <img src={recyclitixLogo} alt="Recyclitix" className="project-logo" />
+                                ) : (
+                                    <span>{project.icon}</span>
+                                )}
                             </div>
                             <div className="project-content">
                                 <h3 className="project-title">{project.title}</h3>
