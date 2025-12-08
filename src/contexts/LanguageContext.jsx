@@ -62,47 +62,80 @@ const translations = {
             ]
         },
         skills: {
-            title: 'Compétences',
+            title: 'Technologies',
+            subtitle: 'Une boîte à outils complète pour bâtir des solutions modernes et évolutives',
             list: [
                 {
-                    title: 'Langages de Programmation',
+                    title: 'Langages',
                     skills: [
-                        { name: 'Java', level: 90 },
-                        { name: 'JavaScript / TypeScript', level: 85 },
-                        { name: 'Python', level: 80 },
-                        { name: 'PHP', level: 75 },
-                        { name: 'C#', level: 70 },
-                        { name: 'Dart', level: 65 },
-                        { name: 'Kotlin', level: 65 }
+                        { name: 'Java' },
+                        { name: 'JavaScript' },
+                        { name: 'TypeScript' },
+                        { name: 'Python' },
+                        { name: 'PHP' },
+                        { name: 'C#' },
+                        { name: 'Dart' },
+                        { name: 'Kotlin' }
                     ]
                 },
                 {
-                    title: 'Frameworks & Technologies',
+                    title: 'Frameworks & Libraries',
                     skills: [
-                        { name: 'Spring Boot', level: 90 },
-                        { name: 'Angular', level: 85 },
-                        { name: 'React.js', level: 85 },
-                        { name: 'ASP.NET', level: 75 },
-                        { name: 'Flutter', level: 70 },
-                        { name: 'TensorFlow / Keras', level: 75 }
+                        { name: 'Spring Boot' },
+                        { name: 'Angular' },
+                        { name: 'React' },
+                        { name: 'Vue.js' },
+                        { name: 'Next.js' },
+                        { name: 'ASP.NET' },
+                        { name: 'Flutter' },
+                        { name: 'TensorFlow' },
+                        { name: 'Laravel' },
+                        { name: 'Symfony' },
+                        { name: 'Tailwind' },
+                        { name: 'Node.js' }
                     ]
                 },
                 {
-                    title: 'Bases de Données',
+                    title: 'Data & Cloud',
                     skills: [
-                        { name: 'MySQL', level: 85 },
-                        { name: 'PostgreSQL', level: 85 },
-                        { name: 'Oracle Database', level: 75 },
-                        { name: 'SQLite', level: 80 }
+                        { name: 'MySQL' },
+                        { name: 'PostgreSQL' },
+                        { name: 'Oracle' },
+                        { name: 'MongoDB' },
+                        { name: 'Redis' },
+                        { name: 'Docker' },
+                        { name: 'Kubernetes' },
+                        { name: 'AWS' },
+                        { name: 'Nginx' }
                     ]
                 },
                 {
-                    title: 'Compétences Techniques',
-                    tags: ['Machine Learning', 'Deep Learning', 'REST API', 'Microservices', 'Docker', 'Git', 'DevOps', 'Keycloak', 'UML', 'Méthode Agile']
+                    title: 'Tools & DevOps',
+                    skills: [
+                        { name: 'Git' },
+                        { name: 'GitHub' },
+                        { name: 'GitLab' },
+                        { name: 'Jenkins' },
+                        { name: 'Linux' },
+                        { name: 'Jira' },
+                        { name: 'JUnit' },
+                        { name: 'JaCoCo' },
+                        { name: 'Postman' },
+                        { name: 'SonarQube' },
+                        { name: 'Selenium' }
+                    ]
                 },
                 {
-                    title: 'Compétences Transversales',
-                    tags: ['Communication', 'Adaptabilité', 'Travail d\'équipe', 'Gestion de projet', 'Résolution de problèmes']
+                    title: 'API',
+                    skills: [
+                        { name: 'GraphQL' }
+                    ]
+                },
+                {
+                    title: 'Web',
+                    skills: [
+                        { name: 'HTML5' }
+                    ]
                 }
             ]
         },
@@ -321,47 +354,80 @@ const translations = {
             ]
         },
         skills: {
-            title: 'Skills',
+            title: 'Technologies',
+            subtitle: 'A comprehensive toolkit for building modern, scalable solutions',
             list: [
                 {
-                    title: 'Programming Languages',
+                    title: 'Languages',
                     skills: [
-                        { name: 'Java', level: 90 },
-                        { name: 'JavaScript / TypeScript', level: 85 },
-                        { name: 'Python', level: 80 },
-                        { name: 'PHP', level: 75 },
-                        { name: 'C#', level: 70 },
-                        { name: 'Dart', level: 65 },
-                        { name: 'Kotlin', level: 65 }
+                        { name: 'Java' },
+                        { name: 'JavaScript' },
+                        { name: 'TypeScript' },
+                        { name: 'Python' },
+                        { name: 'PHP' },
+                        { name: 'C#' },
+                        { name: 'Dart' },
+                        { name: 'Kotlin' }
                     ]
                 },
                 {
-                    title: 'Frameworks & Technologies',
+                    title: 'Frameworks & Libraries',
                     skills: [
-                        { name: 'Spring Boot', level: 90 },
-                        { name: 'Angular', level: 85 },
-                        { name: 'React.js', level: 85 },
-                        { name: 'ASP.NET', level: 75 },
-                        { name: 'Flutter', level: 70 },
-                        { name: 'TensorFlow / Keras', level: 75 }
+                        { name: 'Spring Boot' },
+                        { name: 'Angular' },
+                        { name: 'React' },
+                        { name: 'Vue.js' },
+                        { name: 'Next.js' },
+                        { name: 'ASP.NET' },
+                        { name: 'Flutter' },
+                        { name: 'TensorFlow' },
+                        { name: 'Laravel' },
+                        { name: 'Symfony' },
+                        { name: 'Tailwind' },
+                        { name: 'Node.js' }
                     ]
                 },
                 {
-                    title: 'Databases',
+                    title: 'Data & Cloud',
                     skills: [
-                        { name: 'MySQL', level: 85 },
-                        { name: 'PostgreSQL', level: 85 },
-                        { name: 'Oracle Database', level: 75 },
-                        { name: 'SQLite', level: 80 }
+                        { name: 'MySQL' },
+                        { name: 'PostgreSQL' },
+                        { name: 'Oracle' },
+                        { name: 'MongoDB' },
+                        { name: 'Redis' },
+                        { name: 'Docker' },
+                        { name: 'Kubernetes' },
+                        { name: 'AWS' },
+                        { name: 'Nginx' }
                     ]
                 },
                 {
-                    title: 'Technical Skills',
-                    tags: ['Machine Learning', 'Deep Learning', 'REST API', 'Microservices', 'Docker', 'Git', 'DevOps', 'Keycloak', 'UML', 'Agile Method']
+                    title: 'Tools & DevOps',
+                    skills: [
+                        { name: 'Git' },
+                        { name: 'GitHub' },
+                        { name: 'GitLab' },
+                        { name: 'Jenkins' },
+                        { name: 'Linux' },
+                        { name: 'Jira' },
+                        { name: 'JUnit' },
+                        { name: 'JaCoCo' },
+                        { name: 'Postman' },
+                        { name: 'SonarQube' },
+                        { name: 'Selenium' }
+                    ]
                 },
                 {
-                    title: 'Soft Skills',
-                    tags: ['Communication', 'Adaptability', 'Teamwork', 'Project Management', 'Problem Solving']
+                    title: 'API',
+                    skills: [
+                        { name: 'GraphQL' }
+                    ]
+                },
+                {
+                    title: 'Web',
+                    skills: [
+                        { name: 'HTML5' }
+                    ]
                 }
             ]
         },
