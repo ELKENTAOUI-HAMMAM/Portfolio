@@ -35,6 +35,12 @@ export default function Certifications() {
                     >
                         Coursera (20)
                     </button>
+                    <button
+                        className={filter === 'mlia' ? 'active' : ''}
+                        onClick={() => setFilter('mlia')}
+                    >
+                        MLIA (1)
+                    </button>
                 </div>
 
                 <div className="certifications-grid">

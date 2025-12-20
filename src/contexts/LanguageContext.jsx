@@ -234,6 +234,7 @@ const translations = {
             grade: 'Note',
             verify: 'Vérifier le certificat',
             list: [
+                { platform: 'MLIA', title: 'MLIA Certification', issuer: 'MLIAEdu', score: null, link: 'https://mliaedu.toubkalit.com/verify-certificate/7-6ddbcc4c-a82c-4552-9575-73105cd3276d-941495' },
                 { platform: 'Oracle', title: 'Cloud Infrastructure 2025 Certified AI Foundations Associate', issuer: 'Oracle', score: null, link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=4C4924F442ECC9DF8524932B06D9FD7232C8978920647644C71ABCB424E83C96' },
                 { platform: 'Coursera', title: 'Prompt engineering pour Chatgpt', issuer: 'Vanderbilt University', score: '100%', link: 'https://www.coursera.org/account/accomplishments/verify/HAPVVWGXIT2M' },
                 { platform: 'Coursera', title: 'Introduction au Cloud Computing', issuer: 'IBM', score: '96%', link: 'https://www.coursera.org/account/accomplishments/records/MULQ5JJXP3YU' },
@@ -526,6 +527,7 @@ const translations = {
             grade: 'Grade',
             verify: 'Verify Certificate',
             list: [
+                { platform: 'MLIA', title: 'MLIA Certification', issuer: 'MLIAEdu', score: null, link: 'https://mliaedu.toubkalit.com/verify-certificate/7-6ddbcc4c-a82c-4552-9575-73105cd3276d-941495' },
                 { platform: 'Oracle', title: 'Cloud Infrastructure 2025 Certified AI Foundations Associate', issuer: 'Oracle', score: null, link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=4C4924F442ECC9DF8524932B06D9FD7232C8978920647644C71ABCB424E83C96' },
                 { platform: 'Coursera', title: 'Prompt engineering for ChatGPT', issuer: 'Vanderbilt University', score: '100%', link: 'https://www.coursera.org/account/accomplishments/verify/HAPVVWGXIT2M' },
                 { platform: 'Coursera', title: 'Introduction to Cloud Computing', issuer: 'IBM', score: '96%', link: 'https://www.coursera.org/account/accomplishments/records/MULQ5JJXP3YU' },
