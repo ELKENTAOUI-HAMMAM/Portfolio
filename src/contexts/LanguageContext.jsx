@@ -34,6 +34,20 @@ const translations = {
             title: 'Expérience Professionnelle',
             list: [
                 {
+                    title: 'Stage Fin d\'Études - Ingénieur IA',
+                    company: 'Capgemini Engineering',
+                    location: 'Casablanca',
+                    period: 'Mars 2026 - À présent',
+                    project: 'Conception et déploiement de "SmartStamp 4.0", un système d\'inspection visuelle automatisée par IA pour la chaîne d\'emboutissage',
+                    tasks: [
+                        'Modélisation IA : Annotation de données industrielles et entraînement d\'un modèle de détection d\'objets (YOLOv8s) atteignant une mAP > 95% sur 9 classes de défauts',
+                        'Développement & MLOps : Développement d\'une API d\'inférence en temps réel avec FastAPI et création d\'un tableau de bord de supervision interactif avec Streamlit. Suivi des expérimentations via MLflow',
+                        'Industrialisation : Conteneurisation complète de la solution sous Docker pour un déploiement Edge-AI sur ligne de production',
+                        'Impact Métier : Réduction du temps d\'inspection qualité par pièce de 5 minutes (manuel) à moins de 15 millisecondes (IA), éliminant le goulot d\'étranglement de production'
+                    ],
+                    technologies: ['Python', 'PyTorch', 'YOLOv8', 'OpenCV', 'FastAPI', 'Streamlit', 'MLflow', 'Docker', 'SQLite']
+                },
+                {
                     title: 'Stage Développeur Web Full-Stack',
                     company: 'Norsys Afrique',
                     location: 'Marrakech',
@@ -326,6 +340,20 @@ const translations = {
         experience: {
             title: 'Professional Experience',
             list: [
+                {
+                    title: 'Final Year Internship - AI Engineer',
+                    company: 'Capgemini Engineering',
+                    location: 'Casablanca',
+                    period: 'March 2026 - Present',
+                    project: 'Design and deployment of "SmartStamp 4.0", an AI-powered automated visual inspection system for the stamping line',
+                    tasks: [
+                        'AI Modeling: Industrial data annotation and training of an object detection model (YOLOv8s) achieving a detection accuracy (mAP) > 95% on 9 defect classes',
+                        'Development & MLOps: Development of a real-time inference API using FastAPI and creation of an interactive supervision dashboard with Streamlit. Experiment tracking via MLflow',
+                        'Industrialization: Complete containerization of the solution using Docker for an Edge-AI deployment on the production line',
+                        'Business Impact: Reduction of quality inspection time per part from 5 minutes (manual) to less than 15 milliseconds (AI), eliminating the production bottleneck'
+                    ],
+                    technologies: ['Python', 'PyTorch', 'YOLOv8', 'OpenCV', 'FastAPI', 'Streamlit', 'MLflow', 'Docker', 'SQLite']
+                },
                 {
                     title: 'Full-Stack Web Developer Intern',
                     company: 'Norsys Africa',
