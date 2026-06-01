@@ -1,7 +1,9 @@
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaMapMarkerAlt, FaWhatsapp, FaDownload } from 'react-icons/fa';
 import { useTranslation } from '../contexts/LanguageContext';
 import { useMemo } from 'react';
 import './Contact.css';
+
+const CV_URL = `${import.meta.env.BASE_URL}CV_ELKENTAOUI_HAMMAM.pdf`;
 
 export default function Contact() {
     const { t } = useTranslation();
@@ -65,6 +67,13 @@ export default function Contact() {
                             className="btn btn-contact btn-call"
                         >
                             <FaPhone /> {t('contact.call')}
+                        </a>
+                        <a
+                            href={CV_URL}
+                            download="CV_ELKENTAOUI_HAMMAM.pdf"
+                            className="btn btn-contact btn-download"
+                        >
+                            <FaDownload /> {t('contact.downloadCv')}
                         </a>
                     </div>
 

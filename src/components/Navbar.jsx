@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 import { useTranslation } from '../contexts/LanguageContext';
+import { useTheme } from '../contexts/ThemeContext';
 import './Navbar.css';
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const { language, t, toggleLanguage } = useTranslation();
+    const { theme, toggleTheme } = useTheme();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,14 +32,6 @@ export default function Navbar() {
             <div className="nav-container">
                 <div className="logo">ELKENTAOUI Hammam</div>
 
-                <button
-                    className="menu-toggle"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    aria-label="Toggle menu"
-                >
-                    ☰
-                </button>
-
                 <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
                     <li><a onClick={() => scrollToSection('about')}>{t('nav.about')}</a></li>
                     <li><a onClick={() => scrollToSection('experience')}>{t('nav.experience')}</a></li>
@@ -45,12 +40,30 @@ export default function Navbar() {
                     <li><a onClick={() => scrollToSection('projects')}>{t('nav.projects')}</a></li>
                     <li><a onClick={() => scrollToSection('certifications')}>{t('nav.certifications')}</a></li>
                     <li><a onClick={() => scrollToSection('contact')}>{t('nav.contact')}</a></li>
-                    <li>
-                        <button onClick={toggleLanguage} className="lang-toggle" aria-label="Change language">
-                            {language === 'fr' ? 'EN' : 'FR'}
-                        </button>
-                    </li>
                 </ul>
+
+                <div className="nav-actions">
+                    <button
+                        onClick={toggleTheme}
+                        className="theme-toggle"
+                        aria-label={theme === 'dark' ? t('nav.lightMode') : t('nav.darkMode')}
+                        title={theme === 'dark' ? t('nav.lightMode') : t('nav.darkMode')}
+                    >
+                        {theme === 'dark' ? <FaSun /> : <FaMoon />}
+                    </button>
+
+                    <button onClick={toggleLanguage} className="lang-toggle" aria-label="Change language">
+                        {language === 'fr' ? 'EN' : 'FR'}
+                    </button>
+
+                    <button
+                        className="menu-toggle"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        aria-label="Toggle menu"
+                    >
+                        ☰
+                    </button>
+                </div>
             </div>
         </nav>
     );

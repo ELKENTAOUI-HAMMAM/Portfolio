@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
+import { FaDownload } from 'react-icons/fa';
 import { useTranslation } from '../contexts/LanguageContext';
 import './Hero.css';
+
+const CV_URL = `${import.meta.env.BASE_URL}CV_ELKENTAOUI_HAMMAM.pdf`;
 
 export default function Hero() {
     const { t } = useTranslation();
@@ -50,6 +53,13 @@ export default function Hero() {
                         }}
                     >
                         {t('hero.projectsBtn')}
+                    </a>
+                    <a
+                        href={CV_URL}
+                        download="CV_ELKENTAOUI_HAMMAM.pdf"
+                        className="btn btn-cv"
+                    >
+                        <FaDownload /> {t('hero.cvBtn')}
                     </a>
                 </div>
             </div>

@@ -40,7 +40,7 @@ export default function Experience() {
                                 </div>
                                 <span className="timeline-date">{exp.period}</span>
                             </div>
-                            <p className="timeline-description"><strong>Projet:</strong> {exp.project}</p>
+                            <p className="timeline-description"><strong>{t('experience.projectLabel')}:</strong> {exp.project}</p>
                             <ul className="timeline-tasks">
                                 {exp.tasks.map((task, i) => (
                                     <li key={i}>{task}</li>

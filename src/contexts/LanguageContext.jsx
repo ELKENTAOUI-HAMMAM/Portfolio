@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
 const translations = {
     fr: {
@@ -10,14 +10,17 @@ const translations = {
             projects: 'Projets',
             certifications: 'Certifications',
             interests: 'Centres d\'intérêt',
-            contact: 'Contact'
+            contact: 'Contact',
+            lightMode: 'Passer en mode clair',
+            darkMode: 'Passer en mode sombre'
         },
         hero: {
             greeting: 'Bonjour, je suis',
             role: 'Ingénieur Logiciel',
             description: 'Spécialisé en Java, Spring Boot, Angular, React & Intelligence Artificielle appliquée',
             contactBtn: 'Me Contacter',
-            projectsBtn: 'Voir mes projets'
+            projectsBtn: 'Voir mes projets',
+            cvBtn: 'Télécharger le CV'
         },
         about: {
             title: 'À Propos',
@@ -32,6 +35,7 @@ const translations = {
         },
         experience: {
             title: 'Expérience Professionnelle',
+            projectLabel: 'Projet',
             list: [
                 {
                     title: 'Stage Fin d\'Études - Ingénieur IA',
@@ -301,7 +305,8 @@ const translations = {
             formSending: 'Envoi en cours...',
             formSuccess: 'Message envoyé avec succès !',
             formError: 'Erreur lors de l\'envoi. Réessayez.',
-            call: 'Appeler'
+            call: 'Appeler',
+            downloadCv: 'Télécharger le CV'
         },
         footer: {
             rights: 'Tous droits réservés',
@@ -317,14 +322,17 @@ const translations = {
             projects: 'Projects',
             certifications: 'Certifications',
             interests: 'Interests',
-            contact: 'Contact'
+            contact: 'Contact',
+            lightMode: 'Switch to light mode',
+            darkMode: 'Switch to dark mode'
         },
         hero: {
             greeting: 'Hello, I am',
             role: 'Software Engineer',
             description: 'Specialized in Java, Spring Boot, Angular, React & Applied Artificial Intelligence',
             contactBtn: 'Contact Me',
-            projectsBtn: 'View my projects'
+            projectsBtn: 'View my projects',
+            cvBtn: 'Download CV'
         },
         about: {
             title: 'About',
@@ -339,6 +347,7 @@ const translations = {
         },
         experience: {
             title: 'Professional Experience',
+            projectLabel: 'Project',
             list: [
                 {
                     title: 'Final Year Internship - AI Engineer',
@@ -608,7 +617,8 @@ const translations = {
             formSending: 'Sending...',
             formSuccess: 'Message sent successfully!',
             formError: 'Error sending message. Please try again.',
-            call: 'Call'
+            call: 'Call',
+            downloadCv: 'Download CV'
         },
         footer: {
             rights: 'All rights reserved',
@@ -621,7 +631,23 @@ const translations = {
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-    const [language, setLanguage] = useState('en');
+    const [language, setLanguage] = useState(() => {
+        try {
+            const stored = window.localStorage.getItem('lang');
+            return stored === 'fr' || stored === 'en' ? stored : 'en';
+        } catch {
+            return 'en';
+        }
+    });
+
+    useEffect(() => {
+        document.documentElement.lang = language;
+        try {
+            window.localStorage.setItem('lang', language);
+        } catch {
+            /* localStorage unavailable — ignore */
+        }
+    }, [language]);
 
     const t = (key) => {
         const keys = key.split('.');

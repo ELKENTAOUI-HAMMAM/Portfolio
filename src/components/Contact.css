@@ -60,7 +60,7 @@
     gap: 0.5rem;
     padding: 0.8rem 1.5rem;
     background: var(--primary-gradient);
-    color: white;
+    color: var(--text-on-accent);
     border: none;
     border-radius: var(--radius-md);
     font-size: 1rem;
@@ -85,11 +85,20 @@
 
 .btn-call {
     background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-    color: white;
+    color: var(--text-on-accent);
 }
 
 .btn-call:hover {
     background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.btn-download {
+    background: var(--secondary-gradient);
+    color: var(--text-on-accent);
+}
+
+.btn-download:hover {
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
 }
 
 .social-links {
@@ -116,7 +125,7 @@
 
 .social-link:hover {
     background: var(--primary-gradient);
-    color: white;
+    color: var(--text-on-accent);
     transform: translateY(-5px) scale(1.1);
     box-shadow: var(--shadow-glow);
     border-color: transparent;

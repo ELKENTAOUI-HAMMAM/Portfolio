@@ -69,9 +69,15 @@ nav.scrolled {
     width: 100%;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
 .lang-toggle {
     background: var(--primary-gradient);
-    color: white;
+    color: var(--text-on-accent);
     border: none;
     border-radius: var(--radius-sm);
     padding: 0.4rem 0.8rem;
@@ -87,6 +93,27 @@ nav.scrolled {
     box-shadow: var(--shadow-md);
 }
 
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-accent);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px) rotate(12deg);
+    border-color: var(--text-accent);
+    box-shadow: var(--shadow-sm);
+}
+
 .menu-toggle {
     display: none;
     background: none;
@@ -94,6 +121,7 @@ nav.scrolled {
     color: var(--text-primary);
     font-size: 1.5rem;
     cursor: pointer;
+    line-height: 1;
 }
 
 @media (max-width: 768px) {

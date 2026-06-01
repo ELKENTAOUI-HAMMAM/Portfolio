@@ -52,7 +52,7 @@
 
 .tech-item:hover {
     transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--hover-overlay);
 }
 
 .tech-icon {

@@ -8,7 +8,7 @@ export default function Interests() {
     return (
         <section id="interests">
             <div className="container">
-                <h2 className="section-title">Centres d\'Intérêt</h2>
+                <h2 className="section-title">{t('interests.title')}</h2>
                 <div className="interests-grid">
                     {interests.map((interest, index) => (
                         <div key={index} className="interest-card">

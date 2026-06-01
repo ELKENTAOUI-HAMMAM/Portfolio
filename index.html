@@ -8,6 +8,20 @@
     <meta name="description"
         content="Portfolio de ELKENTAOUI Hammam - Ingénieur Logiciel spécialisé en Java, Spring Boot, Angular, React et Intelligence Artificielle appliquée" />
     <title>ELKENTAOUI Hammam - Portfolio</title>
+    <script>
+        // Apply the saved/preferred theme before first paint to avoid a flash of the wrong theme.
+        (function () {
+            try {
+                var stored = localStorage.getItem('theme');
+                var theme = (stored === 'light' || stored === 'dark')
+                    ? stored
+                    : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+                var root = document.documentElement;
+                root.setAttribute('data-theme', theme);
+                root.style.colorScheme = theme;
+            } catch (e) { /* ignore */ }
+        })();
+    </script>
 </head>
 
 <body>

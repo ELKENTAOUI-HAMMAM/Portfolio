@@ -28,7 +28,7 @@ export default function Projects() {
                                 )}
                                 {project.publication && (
                                     <p className="project-publication">
-                                        <strong>📄 Publication:</strong> {project.publication}
+                                        <strong>📄 {t('projects.publication')}:</strong> {project.publication}
                                         {project.articleUrl && (
                                             <>
                                                 <br />
@@ -38,7 +38,7 @@ export default function Projects() {
                                                     rel="noopener noreferrer"
                                                     className="article-link"
                                                 >
-                                                    🔗 Lire l'article complet
+                                                    🔗 {t('projects.readArticle')}
                                                 </a>
                                             </>
                                         )}
@@ -47,7 +47,7 @@ export default function Projects() {
                                 <p className="project-description">{project.description}</p>
                                 <div>
                                     <strong style={{ color: 'var(--text-accent)', display: 'block', marginBottom: '0.5rem' }}>
-                                        Points clés:
+                                        {t('projects.keyPoints')}:
                                     </strong>
                                     <ul className="project-highlights">
                                         {project.highlights.map((highlight, i) => (

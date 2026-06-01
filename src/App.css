@@ -14,6 +14,11 @@
     --text-primary: #ffffff;
     --text-secondary: #b8b8d4;
     --text-accent: #667eea;
+    /* Text sitting on top of a colored/gradient surface (buttons, active pills).
+       Stays white in BOTH themes — the gradients are dark enough either way. */
+    --text-on-accent: #ffffff;
+    /* Subtle hover tint that must invert between themes. */
+    --hover-overlay: rgba(255, 255, 255, 0.03);
 
     --border-color: rgba(102, 126, 234, 0.2);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -36,6 +41,28 @@
     --transition-slow: 0.5s ease;
 }
 
+/* ── Light theme ──────────────────────────────────────────────
+   Only the tokens that differ are redefined; gradients cascade
+   from :root so the brand colors stay identical in both themes. */
+[data-theme="light"] {
+    --bg-primary: #f7f8fc;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #eef0f7;
+    --bg-glass: rgba(255, 255, 255, 0.72);
+
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a68;
+    --text-accent: #5b4fd6;
+    --text-on-accent: #ffffff;
+    --hover-overlay: rgba(20, 20, 60, 0.05);
+
+    --border-color: rgba(91, 79, 214, 0.22);
+    --shadow-sm: 0 2px 8px rgba(20, 20, 60, 0.08);
+    --shadow-md: 0 4px 16px rgba(20, 20, 60, 0.12);
+    --shadow-lg: 0 8px 32px rgba(20, 20, 60, 0.16);
+    --shadow-glow: 0 0 20px rgba(102, 126, 234, 0.28);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -53,6 +80,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 ::selection {

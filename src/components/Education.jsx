@@ -21,7 +21,7 @@ export default function Education() {
                             </div>
                             <div className="course-tags">
                                 <strong style={{ color: 'var(--text-secondary)', display: 'block', marginBottom: '0.5rem' }}>
-                                    Cours pertinents:
+                                    {t('education.relevantCourses')}:
                                 </strong>
                                 <div className="tech-stack">
                                     {edu.courses.map((course, i) => (
