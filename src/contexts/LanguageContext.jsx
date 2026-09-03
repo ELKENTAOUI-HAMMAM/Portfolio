@@ -38,10 +38,22 @@ const translations = {
             projectLabel: 'Projet',
             list: [
                 {
-                    title: 'Stage Fin d\'Études - Ingénieur IA',
+                    title: 'Associate Data Engineer',
                     company: 'Capgemini Engineering',
-                    location: 'Casablanca',
-                    period: 'Mars 2026 - À présent',
+                    location: 'Fès-Meknès, Maroc · Hybride',
+                    period: 'Septembre 2026 - Aujourd\'hui',
+                    project: 'Ingénierie de données et développement de solutions IA',
+                    tasks: [
+                        'Conception, développement et maintenance de pipelines de données',
+                        'Mise en production de modèles d\'intelligence artificielle et analyse de données'
+                    ],
+                    technologies: ['Python', 'SQL', 'Data Engineering', 'Machine Learning', 'Cloud']
+                },
+                {
+                    title: 'Stagiaire - Ingénieur IA',
+                    company: 'Capgemini Engineering',
+                    location: 'Casablanca et périphérie · Sur site',
+                    period: 'Mars 2026 - Août 2026',
                     project: 'Conception et déploiement de "SmartStamp 4.0", un système d\'inspection visuelle automatisée par IA pour la chaîne d\'emboutissage',
                     tasks: [
                         'Modélisation IA : Annotation de données industrielles et entraînement d\'un modèle de détection d\'objets (YOLOv8s) atteignant une mAP > 95% sur 9 classes de défauts',
@@ -350,10 +362,22 @@ const translations = {
             projectLabel: 'Project',
             list: [
                 {
-                    title: 'Final Year Internship - AI Engineer',
+                    title: 'Associate Data Engineer',
                     company: 'Capgemini Engineering',
-                    location: 'Casablanca',
-                    period: 'March 2026 - Present',
+                    location: 'Fès-Meknès, Morocco · Hybrid',
+                    period: 'September 2026 - Present',
+                    project: 'Data Engineering and AI Solutions Development',
+                    tasks: [
+                        'Design, development, and maintenance of data pipelines',
+                        'Production deployment of artificial intelligence models and data analysis'
+                    ],
+                    technologies: ['Python', 'SQL', 'Data Engineering', 'Machine Learning', 'Cloud']
+                },
+                {
+                    title: 'Intern - AI Engineer',
+                    company: 'Capgemini Engineering',
+                    location: 'Casablanca and surroundings · On-site',
+                    period: 'March 2026 - August 2026',
                     project: 'Design and deployment of "SmartStamp 4.0", an AI-powered automated visual inspection system for the stamping line',
                     tasks: [
                         'AI Modeling: Industrial data annotation and training of an object detection model (YOLOv8s) achieving a detection accuracy (mAP) > 95% on 9 defect classes',
